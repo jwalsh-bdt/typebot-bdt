@@ -7500,6 +7500,9 @@
                       }
                     }
                   },
+                  "additionalInstructions": {
+                    "type": "string"
+                  },
                   "responseMapping": {
                     "type": "array",
                     "items": {
@@ -10624,6 +10627,32 @@
                     ]
                   }
                 }
+              },
+              "systemMessages": {
+                "type": "object",
+                "properties": {
+                  "invalidMessage": {
+                    "type": "string"
+                  },
+                  "botClosed": {
+                    "type": "string"
+                  },
+                  "popupBlockedDescription": {
+                    "type": "string"
+                  },
+                  "popupBlockedButtonLabel": {
+                    "type": "string"
+                  },
+                  "fileUploadError": {
+                    "type": "string"
+                  },
+                  "fileUploadSizeError": {
+                    "type": "string"
+                  },
+                  "whatsAppPictureChoiceSelectLabel": {
+                    "type": "string"
+                  }
+                }
               }
             }
           },
@@ -11199,6 +11228,18 @@
                   "large"
                 ],
                 "description": "Deprecated, use `container.border.roundeness` instead"
+              },
+              "buttonsInput": {
+                "type": "object",
+                "properties": {
+                  "layout": {
+                    "type": "string",
+                    "enum": [
+                      "wrap",
+                      "vertical"
+                    ]
+                  }
+                }
               }
             }
           },
